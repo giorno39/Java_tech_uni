@@ -14,7 +14,7 @@ public class CreateEvent {
         return null;
     }
 
-    public void fillSchedule(Competition ob, Participant[] schedule){
+    public static void fillSchedule(Competition ob, Participant[] schedule){
         ob.initSchedule(schedule.length);
         Random rand = new Random();
         for(Participant participant: schedule){
