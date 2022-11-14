@@ -21,6 +21,8 @@ public class CreateEvent {
             double double_random=rand.nextDouble();
             participant.chanceToWin = double_random + 5;
             participant.betForWin = rand.nextInt(10);
+            participant.id = counter + 1;
+            counter += 1;
         }
     }
 
