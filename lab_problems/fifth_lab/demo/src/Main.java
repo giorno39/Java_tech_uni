@@ -9,9 +9,11 @@ public class Main {
         answer = scan.nextLine();
         if(answer.equals("yes")){
             String username;
+            System.out.println("Enter username");
             username = scan.nextLine()
             User curr;
-            curr = Validators.checkUser()
+            curr = Validators.checkUser(username, users);
+
         }
 
 

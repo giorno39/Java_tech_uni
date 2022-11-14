@@ -37,9 +37,9 @@ public class Validators {
         return IsValid;
     }
 
-    public static User checkUser(User user, User[] users) {
+    public static User checkUser(String username, User[] users) {
         for (User profile : users) {
-            if (profile.getUsername().equals(user.getUsername())) {
+            if (profile.getUsername().equals(username)) {
                 return profile;
             }
         }
