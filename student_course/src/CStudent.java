@@ -7,7 +7,6 @@ public class CStudent {
     public ArrayList<Double> grades;
     public String facultyNum;
 
-    private static final DecimalFormat df = new DecimalFormat("0.00");
 
     public CStudent(String name, String facultyNum)
     {
@@ -22,6 +21,10 @@ public class CStudent {
         for(double grade : this.grades)
         {
             sum += grade;
+        }
+        if (sum == 0)
+        {
+            return 0;
         }
         return sum/this.grades.size();
     }
